@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index version="1" commit="9939da0764fa37e1da232f488138633f409581e6" name="kawa Scripts">
+  <category name="GUI section">
+    <reapack name="GonionMeter_Ex.jsfx" type="effect">
+      <version name="1.03" author="[LOSER][kawaMod]" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/0ba2dbb3ebcabd9c83510146c01249478c455923/GUI%20section/GonionMeter_Ex.jsfx</source>
+      </version>
+      <version name="1.04" author="[LOSER][kawaMod]" time="2016-06-08T08:34:16Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/fcc477dc3a9e4e7ea800a886309ccb224224493b/GUI%20section/GonionMeter_Ex.jsfx</source>
+      </version>
+      <version name="1.06" author="[LOSER][kawaMod]" time="2016-06-11T06:35:25Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/34e372b72c9534aa3e191bc7cbf45c2f6ccb0f0b/GUI%20section/GonionMeter_Ex.jsfx</source>
+      </version>
+      <version name="1.07" author="[LOSER][kawaMod]" time="2016-06-11T09:21:12Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/GonionMeter_Ex.jsfx</source>
+      </version>
+      <version name="2016/06/15" author="[LOSER][kawaMod]" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/GonionMeter_Ex.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_Clock.lua" type="script">
+      <version name="1.15" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ to single file .]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/kawa_GUI_Clock.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_Clock.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_DummyTimer.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-08T08:34:16Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/a32fbc53ccd8076a05419f0e39202a2ebbace1c4/GUI%20section/kawa_GUI_DummyTimer.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_FxRandomiza.lua" type="script">
+      <version name="1.15" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ to single file .]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/kawa_GUI_FxRandomiza.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_FxRandomiza.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_GonioMeter.lua" type="script">
+      <version name="1.15" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ to single file .]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/kawa_GUI_GonioMeter.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_GonioMeter.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_GonioMeter_EX.lua" type="script">
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_GonioMeter_EX.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_GonioMeter_EX_Single.lua" type="script">
+      <version name="1.15" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ to single file .]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/kawa_GUI_GonioMeter_EX_Single.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_GonioMeter_EX_Single.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_InfoLoopSelection.lua" type="script">
+      <version name="1.15" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ to single file .]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/kawa_GUI_InfoLoopSelection.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_InfoLoopSelection.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_InfoTimeSelection.lua" type="script">
+      <version name="1.15" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ to single file .]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/kawa_GUI_InfoTimeSelection.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_InfoTimeSelection.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_MatrixAnim3D.lua" type="script">
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_MatrixAnim3D.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_OsilloScope.lua" type="script">
+      <version name="1.15" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ to single file .]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/kawa_GUI_OsilloScope.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_OsilloScope.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_ParticalAnimation.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-08T08:34:16Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/a32fbc53ccd8076a05419f0e39202a2ebbace1c4/GUI%20section/kawa_GUI_ParticalAnimation.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_ParticalAnimation.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_PeakMeter.lua" type="script">
+      <version name="1.15" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ to single file .]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/kawa_GUI_PeakMeter.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_PeakMeter.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_RamenTimer.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-08T08:34:16Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/a32fbc53ccd8076a05419f0e39202a2ebbace1c4/GUI%20section/kawa_GUI_RamenTimer.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_RamenTimer.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_SimpleVCA.lua" type="script">
+      <version name="1.15" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ to single file .]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/kawa_GUI_SimpleVCA.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_SimpleVCA.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_Test.lua" type="script">
+      <version name="1.15" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ to single file .]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/kawa_GUI_Test.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_Test.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_TestTabComponent.lua" type="script">
+      <version name="1.15" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ to single file .]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/kawa_GUI_TestTabComponent.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_TestTabComponent.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_GUI_TestTabComponentFade.lua" type="script">
+      <version name="1.15" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ to single file .]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/GUI%20section/kawa_GUI_TestTabComponentFade.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/GUI%20section/kawa_GUI_TestTabComponentFade.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="MAIN section">
+    <reapack name="kawa_MAIN_BasePitchTuning.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_BasePitchTuning.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_BasePitchTuning.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_ColorMarkerHue.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_ColorMarkerHue.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_ColorMarkerHue.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_ColorTrackHue.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_ColorTrackHue.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_ColorTrackHue.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_CreateSamplOMatic5000.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_CreateSamplOMatic5000.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_CreateSamplOMatic5000.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_DuplicateMusical.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_DuplicateMusical.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_DuplicateMusical.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_HorizontalZoom_In_3.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_HorizontalZoom_In_3.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_HorizontalZoom_In_3.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_HorizontalZoom_In_5.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_HorizontalZoom_In_5.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_HorizontalZoom_In_5.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_HorizontalZoom_Out_3.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_HorizontalZoom_Out_3.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_HorizontalZoom_Out_3.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_HorizontalZoom_Out_5.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_HorizontalZoom_Out_5.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_HorizontalZoom_Out_5.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_Next_ScreenSet.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_Next_ScreenSet.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_Next_ScreenSet.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_Prev_ScreenSet.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_Prev_ScreenSet.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_Prev_ScreenSet.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_SelectedItemsRenderNewTrack.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_SelectedItemsRenderNewTrack.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_SelectedItemsRenderNewTrack.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_SelectionNext.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_SelectionNext.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_SelectionNext.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_SelectionPrev.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_SelectionPrev.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_SelectionPrev.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_SplitItem2.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_SplitItem2.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_SplitItem2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_SplitItem3.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_SplitItem3.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_SplitItem3.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_SplitItem4.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_SplitItem4.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_SplitItem4.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_TakeNameToTextClip.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_TakeNameToTextClip.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_TakeNameToTextClip.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_TakeNameToTrackName.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_TakeNameToTrackName.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_TakeNameToTrackName.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_ToggleLengthNext.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_ToggleLengthNext.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_ToggleLengthNext.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_ToggleLengthPrev.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_ToggleLengthPrev.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_ToggleLengthPrev.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_Transpose.lua" type="script">
+      <version name="1.1" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_Transpose.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_Transpose.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_VerticalZoom_In_3.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_VerticalZoom_In_3.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_VerticalZoom_In_3.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_VerticalZoom_In_5.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_VerticalZoom_In_5.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_VerticalZoom_In_5.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_VerticalZoom_Out_3.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_VerticalZoom_Out_3.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_VerticalZoom_Out_3.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MAIN_VerticalZoom_Out_5.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MAIN%20section/kawa_MAIN_VerticalZoom_Out_5.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MAIN%20section/kawa_MAIN_VerticalZoom_Out_5.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="MIDI editor">
+    <reapack name="kawa_MIDI_DecreaseLength.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_DecreaseLength.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_DecreaseLength.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_DecreaseStartPos.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_DecreaseStartPos.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_DecreaseStartPos.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_DecreaseVelocity.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_DecreaseVelocity.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_DecreaseVelocity.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_DeleteBottomNote.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_DeleteBottomNote.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_DeleteBottomNote.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_DeleteTopNote.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_DeleteTopNote.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_DeleteTopNote.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_DetectBottomNote.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_DetectBottomNote.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_DetectBottomNote.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_DetectTopNote.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_DetectTopNote.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_DetectTopNote.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_DuplicateMusical.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_DuplicateMusical.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_DuplicateMusical.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_DuplicateSimple.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_DuplicateSimple.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_DuplicateSimple.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_ExpandVelocity.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_ExpandVelocity.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_ExpandVelocity.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_GenerateArp.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_GenerateArp.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_GenerateArp.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_GrowUp.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_GrowUp.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_GrowUp.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_HorizontalZoom_In_3.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_HorizontalZoom_In_3.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_HorizontalZoom_In_3.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_HorizontalZoom_In_5.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_HorizontalZoom_In_5.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_HorizontalZoom_In_5.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_HorizontalZoom_Next.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_HorizontalZoom_Next.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_HorizontalZoom_Next.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_HorizontalZoom_Out_3.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_HorizontalZoom_Out_3.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_HorizontalZoom_Out_3.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_HorizontalZoom_Out_5.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_HorizontalZoom_Out_5.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_HorizontalZoom_Out_5.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_HorizontalZoom_Prev.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_HorizontalZoom_Prev.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_HorizontalZoom_Prev.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_IncreaseLength.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_IncreaseLength.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_IncreaseLength.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_IncreaseStartPos.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_IncreaseStartPos.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_IncreaseStartPos.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_IncreaseVelocity.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_IncreaseVelocity.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_IncreaseVelocity.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_InsertCC64_off.lua" type="script">
+      <version name="1.01" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ fix syntax error.]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_InsertCC64_off.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_InsertCC64_off.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_InsertCC64_on.lua" type="script">
+      <version name="1.01" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ fix syntax error.]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_InsertCC64_on.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_InsertCC64_on.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_LegatoType2.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_LegatoType2.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_LegatoType2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_NoteLengthToEnd.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_NoteLengthToEnd.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_NoteLengthToEnd.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_NudgeNoteLeft.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_NudgeNoteLeft.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_NudgeNoteLeft.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_NudgeNoteRight.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_NudgeNoteRight.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_NudgeNoteRight.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_NudgeTwoNoteLeft.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_NudgeTwoNoteLeft.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_NudgeTwoNoteLeft.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_NudgeTwoNoteRight.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_NudgeTwoNoteRight.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_NudgeTwoNoteRight.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_ReduceVelocity.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_ReduceVelocity.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_ReduceVelocity.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_ResolveOverLap.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_ResolveOverLap.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_ResolveOverLap.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_SelectAllNoteCurrentTake.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_SelectAllNoteCurrentTake.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_SelectAllNoteCurrentTake.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_SelectBottomNotes.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_SelectBottomNotes.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_SelectBottomNotes.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_SelectionNext.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_SelectionNext.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_SelectionNext.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_SelectionPrev.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_SelectionPrev.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_SelectionPrev.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_SelectMiddleNotes.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_SelectMiddleNotes.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_SelectMiddleNotes.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_SelectTopNotes.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_SelectTopNotes.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_SelectTopNotes.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_SplitNote2.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_SplitNote2.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_SplitNote2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_SplitNote3.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_SplitNote3.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_SplitNote3.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_SplitNote4.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_SplitNote4.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_SplitNote4.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_SplitNote5.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_SplitNote5.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_SplitNote5.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_SplitNote7.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_SplitNote7.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_SplitNote7.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_StrokeDown.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_StrokeDown.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_StrokeDown.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_StrokeUp.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_StrokeUp.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_StrokeUp.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_ToggleCrop.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_ToggleCrop.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_ToggleCrop.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VelocityFix.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VelocityFix.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VelocityFix.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VelocityInterPolation_Cubic.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VelocityInterPolation_Cubic.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VelocityInterPolation_Cubic.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VelocityInterPolation_CubicRand.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VelocityInterPolation_CubicRand.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VelocityInterPolation_CubicRand.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VelocityInterPolation_Liner.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VelocityInterPolation_Liner.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VelocityInterPolation_Liner.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VelocityInterPolation_LinerRand.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VelocityInterPolation_LinerRand.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VelocityInterPolation_LinerRand.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VelocityInterPolation_Sin.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VelocityInterPolation_Sin.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VelocityInterPolation_Sin.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VelocityInterPolation_SinRand.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VelocityInterPolation_SinRand.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VelocityInterPolation_SinRand.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VelocityRandom.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VelocityRandom.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VelocityRandom.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VerticalScrollToBottomNote.lua" type="script">
+      <version name="1.01" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ rename script
++ improve scroll function ]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VerticalScrollToBottomNote.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VerticalScrollToBottomNote.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VerticalScrollToCircle.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VerticalScrollToCircle.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VerticalScrollToCircle.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VerticalScrollToTopNote.lua" type="script">
+      <version name="1.01" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ rename script
++ improve scroll function ]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VerticalScrollToTopNote.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VerticalScrollToTopNote.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VerticalZoom_In_3.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VerticalZoom_In_3.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VerticalZoom_In_3.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VerticalZoom_In_5.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VerticalZoom_In_5.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VerticalZoom_In_5.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VerticalZoom_Next.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VerticalZoom_Next.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VerticalZoom_Next.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VerticalZoom_Out_3.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VerticalZoom_Out_3.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VerticalZoom_Out_3.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VerticalZoom_Out_5.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VerticalZoom_Out_5.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VerticalZoom_Out_5.lua</source>
+      </version>
+    </reapack>
+    <reapack name="kawa_MIDI_VerticalZoom_Prev.lua" type="script">
+      <version name="1.0" author="kawa_" time="2016-06-05T06:24:44Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/709e67e5c0147e45b3d571af38bff6a91f32932b/MIDI%20editor/kawa_MIDI_VerticalZoom_Prev.lua</source>
+      </version>
+      <version name="2016/06/15" author="kawa_" time="2016-06-14T20:20:57Z">
+        <source main="true">https://github.com/kawaCat/ReaScript-MidiPack/raw/9939da0764fa37e1da232f488138633f409581e6/MIDI%20editor/kawa_MIDI_VerticalZoom_Prev.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <metadata>
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 kawa Scripts\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 ReaScript-MIDI for ReaPack.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\field{\*\fldinst{HYPERLINK "http://reaper.fm"}}{\fldrslt{\ul
+Cockos REAPER
+}}}
+ ReaScript for Midi Piano Roll editor.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\field{\*\fldinst{HYPERLINK "http://stash.reaper.fm/v/26812/ReaScript-MIDI.zip"}}{\fldrslt{\ul
+Reaper Resources URL
+}}}
+ \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 More Scripts info and Animation Preview at {\field{\*\fldinst{HYPERLINK "https://github.com/kawaCat/ReaScript-MIDI/wiki/"}}{\fldrslt{\ul
+github Wiki Page
+}}}
+.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Contributors\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Reaper Thread from 2ch.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab translation help :176 :jcx :453 :148\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Special Thanks\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Reaper Thread from 2ch.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab X-Raym\sa180\par}
+}
+]]></description>
+  </metadata>
+</index>

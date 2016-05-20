@@ -1,0 +1,648 @@
+//-====================================================================== 
+//- ReaScript Name: GonionMeter_Ex. 
+//- Version: 2016/06/15 
+//- Author: kawa_ 
+//- Author URI: http://forum.cockos.com/member.php?u=105939 
+//- Repository: GitHub 
+//- Repository URI: https://github.com/kawaCat/ReaScript-MidiPack 
+//-====================================================================== 
+(C) 2007, Michael Gruhn.
+desc:Goniometer_EX
+//tags: analysis visualization
+//author: [LOSER][kawaMod]
+//date:2016-05-25(kawa)
+//
+//======================================================================
+slider1:0<0,2,1{Dots,Lines,Rays}>Display
+//======================================================================
+slider41:0<-10,10,0> -In L sample
+slider42:0<-10,10,0> -In R sample
+slider43:0<0,2,0.001> -Max L abs Value
+slider44:0<0,2,0.001> -Max R abs Value
+slider45:0.5<0,1,0.001> Stereo Direction( L-C-R )
+slider46:0.5<0,1,0.001> -Stereo Direction(non Smooth)
+slider47:0<0,4,1{Diamond Type 1,Diamond Type 2,Ellipse,EllipseBox,Both,None}> Type
+slider48:0<0,1,1{OFF,ON}> Blur
+slider50:0<-10,10,0> -In L sample 0 
+slider51:0<-10,10,0> -In L sample 1
+slider52:0<-10,10,0> -In L sample 2
+slider53:0<-10,10,0> -In L sample 3
+slider54:0<-10,10,0> -In L sample 4 
+slider55:0<-10,10,0> -In R sample 0
+slider56:0<-10,10,0> -In R sample 1
+slider57:0<-10,10,0> -In R sample 2
+slider58:0<-10,10,0> -In R sample 3
+slider59:0<-10,10,0> -In R sample 4
+//======================================================================
+slider60:3<1,20,0.1> Direction Angle Speed
+slider61:5<1,8,0.1> Value Speed
+slider62:20<8,500,1> BufferSize ( x 20)
+//======================================================================
+@init
+//gfx_clear=-1;
+//======================================================================
+off = 500000;
+rot=-45*0.017453292;
+DOTS = 0;
+LINES = 1;
+RAYS = 2;
+MAXDRAWSPLS = slider62*20;
+PHASEUPDATERATE = srate/8;
+n = 0;
+phC = 0;
+ph = 0;
+//======================================================================
+_lastDirectionAngle = 0.0;
+_sampleBuf_L = 512340;
+_sampleBuf_R = 522340;
+_lastSizeEllipse = 0.0;
+_lastSizeDiamond = 0.0;
+_lastMid = 0.0;
+_lastSide = 0.0;
+_maxMid   =0.0;
+_maxSideL =0.0;
+_maxSideR =0.0;
+_lastMax_L =0.0;
+_lastMax_R =0.0;
+_LOG2_VAL_= 0.69314718055994529;
+//======================================================================
+@slider
+(slider48 == 0)? ( gfx_clear=0;):( gfx_clear=-1;);
+MAXDRAWSPLS = slider62*20;
+//======================================================================
+@block
+_max_L = 0;
+_max_R = 0;
+_maxMid =0;
+_maxSideL =0;
+_maxSideR =0;
+//======================================================================
+@sample
+//======================================================================
+slider41 = spl0;
+slider42 = spl1;
+//======================================================================
+_mid = (spl0+spl1)/2; //mono
+_sideL = spl0 -_mid; // streo wide L material
+_sideR = spl1 -_mid; // streo wide R material
+//======================================================================
+_maxMid =  min(max(abs(_mid),_maxMid),10.0);
+_maxSideL =min(max(abs(_sideL),_maxSideL),10.0);
+_maxSideR =min(max(abs(_sideR),_maxSideR),10.0);
+//======================================================================
+_max_L = min(max(abs(_max_L),spl0),10.0); // 0.0 ~ 10.0  limit . 10.0 is +20db ?? 
+_max_R = min(max(abs(_max_R),spl1),10.0); //
+//======================================================================
+slider43 = _max_L;
+slider44 = _max_R;
+//======================================================================
+rad = atan2( _max_L,_max_R); // radian 0 ~ 90 
+slider46 =  1.0- rad/($pi/2);
+_newSlider2Value = 1.0- rad/($pi/2); // add 
+//======================================================================
+_sampleBuf_L[4] =_sampleBuf_L[3];  // delayed 4 sample
+_sampleBuf_L[3] =_sampleBuf_L[2];  // delayed 3 sample
+_sampleBuf_L[2] =_sampleBuf_L[1];  // delayed 2 sample
+_sampleBuf_L[1] =_sampleBuf_L[0];  // delayed 1 sample
+_sampleBuf_L[0] = spl0;            // head sample
+//======================================================================
+_sampleBuf_R[4] =_sampleBuf_R[3];
+_sampleBuf_R[3] =_sampleBuf_R[2];
+_sampleBuf_R[2] =_sampleBuf_R[1];
+_sampleBuf_R[1] =_sampleBuf_R[0];
+_sampleBuf_R[0] = spl1;
+//======================================================================
+slider50 = _sampleBuf_L[0];
+slider51 = _sampleBuf_L[1];
+slider52 = _sampleBuf_L[2];
+slider53 = _sampleBuf_L[3];
+slider54 = _sampleBuf_L[4];
+//======================================================================
+slider55 = _sampleBuf_R[0];
+slider56 = _sampleBuf_R[1];
+slider57 = _sampleBuf_R[2];
+slider58 = _sampleBuf_R[3];
+slider59 = _sampleBuf_R[4];
+//======================================================================
+s0 = sign(spl0);
+s1 = sign(spl1);
+angle = atan( spl0 / spl1 );
+(s0 == 1 && s1 == -1) || (s0 == -1 && s1 == -1) ? angle += 3.141592654;
+s0 == -1 && s1 == 1 ? angle += 6.283185307;
+spl1 == 0 ? spl0 > 0 ? angle = 1.570796327 : angle = 4.71238898;
+spl0 == 0 ? spl1 > 0 ? angle = 0 : angle = 3.141592654;
+radius = sqrt( sqr(spl0)+sqr(spl1) ) ;
+angle -= rot;
+vert = 0[b] = cos(angle)*radius;
+horiz = off[b] = sin(angle)*radius;
+b<MAXDRAWSPLS ? b += 1;
+
+s0 != s1 ? phC-=1:phC+=1;
+(n+=1) > PHASEUPDATERATE ? (
+  ph = (1-(phC/n))/2;
+  phC = n = 0;
+);
+//======================================================================
+@gfx 256 450
+//======================================================================
+size = min(gfx_w,gfx_h);
+sizeH = size/2;
+sizeDSqr05 = sizeH * 0.70710681;
+sizeQ = sizeH/2;
+size3Q = 3*sizeQ;
+// grid
+cx =  size/2;
+cy = (size)/2 ;
+//======================================================================
+(mouse_cap) ? (
+  gfx_r=gfx_g=gfx_b=0; gfx_a=1;
+  gfx_x=gfx_y=0;
+  gfx_rectto(gfx_w,gfx_h);
+);
+//======================================================================
+gfx_r=gfx_g=gfx_b=0; gfx_a=0.025;
+gfx_x=gfx_y=0;
+gfx_rectto(gfx_w,gfx_h);
+x = y = sizeH;
+//======================================================================
+i = min(b,MAXDRAWSPLS);
+//======================================================================
+while (
+  slider1 == DOTS ? (
+    gfx_a=1;
+    gfx_x=sizeH+0[i]*sizeDSqr05;
+    gfx_y=sizeH-off[i]*sizeDSqr05;
+    gfx_setpixel(0.5,1,0);
+  ):(
+    
+    slider1 == LINES ?
+    (
+      gfx_x=x; gfx_y=y;
+      x=sizeH+0[i]*sizeDSqr05;
+      y=sizeH-off[i]*sizeDSqr05;
+    ):(
+      gfx_x=sizeH+0[i]*sizeDSqr05;
+      gfx_y=sizeH-off[i]*sizeDSqr05;
+    );
+    
+    gfx_r=0.5; gfx_g=1; gfx_b=0; gfx_a=0.6;
+    gfx_lineto(x,y,0);
+  );
+  //====================================================================
+  
+  (i-=1) > 0;
+);
+//======================================================================
+b=0;
+//======================================================================
+gfx_r=gfx_g=gfx_b=0.8; gfx_a=1;
+
+gfx_x=sizeQ; gfx_y=sizeQ;
+gfx_lineto(size3Q,size3Q,0);
+
+gfx_x=sizeQ; gfx_y=size3Q;
+gfx_lineto(size3Q,sizeQ,0);
+
+gfx_x = gfx_y = sizeQ;
+gfx_drawchar($'L');
+gfx_x = size3Q; gfx_y = sizeQ;
+gfx_drawchar($'R');
+gfx_x = sizeH; gfx_y = 0;
+gfx_drawchar($'M');
+gfx_x = 0; gfx_y = sizeH;
+gfx_drawchar($'+');
+gfx_drawchar($'S');
+gfx_x = size-20; gfx_y = sizeH;
+gfx_drawchar($'-');
+gfx_drawchar($'S');
+
+gfx_r=gfx_g=gfx_b=0; gfx_a=1;
+gfx_x=0; gfx_y=size;
+gfx_rectto(size+1,size+20);
+gfx_r=1; gfx_g=0; gfx_b=0; gfx_a=1;
+gfx_x=1+ph*(size-1); gfx_y=size+1;
+gfx_lineto(gfx_x,size+19,0);
+
+gfx_r=gfx_g=gfx_b=0.8; gfx_a=1;
+gfx_x = 0; gfx_y = size+10;
+gfx_drawnumber(0,0);
+gfx_x = sizeH-8; gfx_y = size+10;
+gfx_drawnumber(90,0);
+gfx_x = size-25; gfx_y = size+10;
+gfx_drawnumber(180,0);
+
+gfx_r=0.5; gfx_g=1; gfx_b=0; gfx_a=1;
+gfx_x = 0; gfx_y = size;
+gfx_drawnumber(ph*180,0);
+
+//======================================================================
+function _rotPoint(ox,oy,AngleRadian_)
+  local (lx, ly,px,py)
+(
+    lx = this.x -ox;
+    ly = this.y -oy;
+    px = lx * cos(AngleRadian_) - ly *sin(AngleRadian_);
+    py = lx * sin(AngleRadian_) + ly *cos(AngleRadian_);
+    this.x = ox +px;
+    this.y = oy +py;
+);
+//======================================================================
+function _toRelativeValue(InSample_,relDb_)
+  local ( db,out)
+(
+    db =  log10(InSample_) * 20;
+    (db < relDb_)?(db = relDb_;);
+    out = 1-((db)/(relDb_));
+    out;
+);
+//======================================================================
+function _drawLineFromBuf(_buffer_,bufferSize_)//x1,y1,x2,y2.. order 
+  local ( x1,y1,index_)
+(
+    index_ = 0;
+    gfx_x = _buffer_[0];//
+    gfx_y = _buffer_[1];//
+    //==================================================================
+    while (index_ < bufferSize_)
+    (
+      gfx_lineto( _buffer_[index_],_buffer_[index_+1]);
+      index_ +=2;
+    );
+);
+//======================================================================
+function _drawLineFromBuf2(_buffer_,bufferSize_)//x1,y1,x2,y2.. order )
+  local ( x1,y1,index_)
+(
+    index_ = 0;
+    //==================================================================
+    while (index_ < bufferSize_)
+    (
+      gfx_lineto( _buffer_[index_],_buffer_[index_+1]);
+      index_ +=2;
+    );
+);
+//======================================================================
+
+//======================================================================
+//from http://www.softist.com/programming/drawcircle/drawcircle.htm (mod)
+//======================================================================
+function _calcEllipsePoints( cx_,cy_
+                           , radiusX,radiusY
+                           , rad_,division
+                           , pointBuf1,pointBuf2,pointBuf3,pointBuf4)
+  local ( _xx ,_yy,_x,_y,cnt_,pointsNum)
+(
+      //================================================================
+      _xx = radiusX * division ;
+      _yy = 0;
+      _x  = _xx / division;
+      _y  = _yy / division;
+      //================================================================
+      gfx_x = cx_;gfx_y = cy_;
+      //================================================================
+      cnt_ =0;
+      while (_xx >= 0)
+      (
+        _x = _xx / division;
+        _y = _yy / division;
+        //==============================================================
+        //rot point
+        p1.x = cx_ + _x ;
+        p1.y = cy_ - _y ;
+        p1._rotPoint(cx_,cy_,rad_); 
+        //==============================================================
+        p2.x = cx_ - _x ;
+        p2.y = cy_ - _y;
+        p2._rotPoint(cx_,cy_,rad_);
+        //==============================================================
+        p3.x = cx_ - _x; 
+        p3.y = cy_ + _y ;
+        p3._rotPoint(cx_,cy_,rad_);
+        //==============================================================
+        p4.x = cx_ + _x;
+        p4.y = cy_ + _y ;
+        p4._rotPoint(cx_,cy_,rad_);
+        //==============================================================
+        pointBuf1[cnt_] = p1.x; //x,y order
+        pointBuf2[cnt_] = p2.x;
+        pointBuf3[cnt_] = p3.x;
+        pointBuf4[cnt_] = p4.x;
+        cnt_ += 1;
+        pointBuf1[cnt_] = p1.y;
+        pointBuf2[cnt_] = p2.y;
+        pointBuf3[cnt_] = p3.y;
+        pointBuf4[cnt_] = p4.y;
+        cnt_ += 1;
+        //==============================================================
+        _yy =_yy + ( _xx * radiusY / radiusX / division );
+        _xx =_xx - ( ceil(_yy * radiusX / radiusY / division )+0.1);
+        //============================================================== 
+      );
+      //================================================================
+      pointsNum =cnt_;
+      pointsNum; //return pointNum(point Buffer size
+);
+//======================================================================
+
+//======================================================================
+function _drawDiamond(cx_,cy_,size_,rad,modTop,modRight,modBottom,modleft)
+  local (p1,p2,p3,p4)
+(
+    //==================================================================
+    p1.x = cx_ ; 
+    p1.y = cy_ - size_* modTop ; 
+    //==================================================================
+    p2.x = cx_ + size_* modRight; 
+    p2.y = cy_;
+    //==================================================================
+    p3.x = cx_;
+    p3.y = cy_ + size_* modBottom;
+    //==================================================================
+    p4.x = cx_ - size_ * modleft;  
+    p4.y = cy_;
+    //==================================================================
+    p1._rotPoint(cx_,cy_,rad);
+    p2._rotPoint(cx_,cy_,rad);
+    p3._rotPoint(cx_,cy_,rad);
+    p4._rotPoint(cx_,cy_,rad);
+    //==================================================================
+    gfx_line(p1.x,p1.y,p2.x,p2.y);
+    gfx_line(p2.x,p2.y,p3.x,p3.y);
+    gfx_line(p3.x,p3.y,p4.x,p4.y);
+    gfx_line(p4.x,p4.y,p1.x,p1.y);   
+);
+//======================================================================
+function _drawEllipseBox(cx_, cy_, a_, b_,size_,rad_,division,modX,modY,aspectRatio_)
+ local (_xx ,_yy,_x,_y,radiusX,radiusY,minV,maxV,cnt_)
+ (
+      //================================================================
+      minV = min(a_,b_);
+      maxV = max(a_,b_)+0.0000000001; 
+      radiusX = (minV /maxV) * size_/aspectRatio_ * modX;
+      radiusY = size_ * modY ;
+      //================================================================
+      _pointBuf_a = 10123; //buf pointer
+      _pointBuf_b = 20123;
+      _pointBuf_c = 30123;
+      _pointBuf_d = 40123;
+      //================================================================      
+      pointsNum = _calcEllipsePoints( cx_,cy_
+                                    , radiusX,radiusY
+                                    , rad_,division
+                                    , _pointBuf_a,_pointBuf_b
+                                    , _pointBuf_c,_pointBuf_d);
+      //================================================================
+      gfx_x = cx_;gfx_y = cy_;         
+      //================================================================
+      cnt_ =0;
+      while(cnt_ < pointsNum )
+      (
+          gfx_lineto( _pointBuf_a[cnt_], _pointBuf_a[cnt_+1]);//x,y order
+          gfx_lineto( _pointBuf_b[cnt_], _pointBuf_b[cnt_+1]);
+          gfx_lineto( _pointBuf_c[cnt_], _pointBuf_c[cnt_+1]);
+          gfx_lineto( _pointBuf_d[cnt_], _pointBuf_d[cnt_+1]);
+          cnt_ +=2;
+      );
+      //================================================================
+);
+//======================================================================
+function _drawSideLine(cx_, cy_, a_, b_,size_,rad_,division ,modX,modY,aspectRatio_)
+ local ( _xx ,_yy,_x,_y,minV,maxV,
+       , _pointBuf_a,_pointBuf_b,_pointBuf_c,_pointBuf_d)
+ (
+      //================================================================
+      minV = min(a_,b_);
+      maxV = max(a_,b_)+0.0000000001; 
+      radiusX =  (minV /maxV)*size_/aspectRatio_ * modX;
+      radiusY = size_  * modY ;
+      //================================================================
+      gfx_x = cx_;gfx_y = cy_;
+      //================================================================
+      _pointBuf_a = 10123; //buf pointer
+      _pointBuf_b = 20123; 
+      _pointBuf_c = 30123; 
+      _pointBuf_d = 40123; 
+      //================================================================      
+      pointsNum = _calcEllipsePoints( cx_,cy_
+                                    , radiusX,radiusY
+                                    , rad_,division
+                                    , _pointBuf_a,_pointBuf_b
+                                    , _pointBuf_c,_pointBuf_d);
+      //================================================================
+      gfx_line(_pointBuf_a[0] ,_pointBuf_a[1] ,_pointBuf_b[0] ,_pointBuf_b[1] );
+      //=============================================s==================
+);
+//======================================================================
+
+//======================================================================
+function _drawDiamond_2(cx_, cy_, a_, b_,size_,rad_,division ,modX,modY,aspectRatio_)
+ local ( _xx ,_yy,_x,_y,minV,maxV,
+       , _pointBuf_a,_pointBuf_b,_pointBuf_c,_pointBuf_d,cnt_)
+(
+      //================================================================
+      minV = min(a_,b_);
+      maxV = max(a_,b_)+0.0000000001;
+      radiusX =  (minV /maxV)*size_/aspectRatio_ * modX;
+      radiusY = size_  * modY;
+      //================================================================
+      _pointBuf_a = 10123; //buf pointer
+      _pointBuf_b = 20123; 
+      _pointBuf_c = 30123; 
+      _pointBuf_d = 40123; 
+      //================================================================
+      pointsNum = _calcEllipsePoints( cx_,cy_
+                                    , radiusX,radiusY
+                                    , rad_,division
+                                    , _pointBuf_a,_pointBuf_b
+                                    , _pointBuf_c,_pointBuf_d);
+      //================================================================  
+      cnt_ = pointsNum-1;
+      gfx_line(_pointBuf_a[0] ,_pointBuf_a[1] ,_pointBuf_a[cnt_-1] ,_pointBuf_a[cnt_] );
+      gfx_line(_pointBuf_c[0] ,_pointBuf_c[1] ,_pointBuf_c[cnt_-1] ,_pointBuf_c[cnt_] );
+      gfx_line(_pointBuf_d[0] ,_pointBuf_d[1] ,_pointBuf_d[cnt_-1] ,_pointBuf_d[cnt_] );
+      gfx_line(_pointBuf_b[0] ,_pointBuf_b[1] ,_pointBuf_b[cnt_-1] ,_pointBuf_b[cnt_] );
+      //=============================================s==================
+);
+//======================================================================
+function _drawEllipseOutLine(cx_, cy_, a_, b_,size_,rad_,division ,modX,modY ,aspectRatio_)
+ local ( _xx ,_yy,_x,_y,minV,maxV,
+       , _pointBuf_a,_pointBuf_b,_pointBuf_c,_pointBuf_d)
+ (
+      //================================================================
+      minV = min(a_,b_);
+      maxV = max(a_,b_)+0.0000000001; 
+      radiusX = (minV /maxV) * size_/aspectRatio_ * modX;
+      radiusY = size_  * modY ;
+      //================================================================
+      _pointBuf_a = 10123; //buf pointer
+      _pointBuf_b = 20123; 
+      _pointBuf_c = 30123; 
+      _pointBuf_d = 40123;
+      //================================================================      
+      pointsNum = _calcEllipsePoints( cx_,cy_
+                                    , radiusX,radiusY
+                                    , rad_,division
+                                    , _pointBuf_a,_pointBuf_b
+                                    , _pointBuf_c,_pointBuf_d);
+      //================================================================
+      _drawLineFromBuf(_pointBuf_a,pointsNum);
+      _drawLineFromBuf(_pointBuf_b,pointsNum);
+      _drawLineFromBuf(_pointBuf_c,pointsNum);
+      _drawLineFromBuf(_pointBuf_d,pointsNum);
+      //================================================================
+);
+//======================================================================
+function _drawEllipseOutAndDia(cx_, cy_, a_, b_,size_,rad_,division,modX,modY ,aspectRatio_)
+ local (_xx ,_yy,_x,_y,minV,maxV,_tempV,_pointBuf_,cnt_)
+ (
+      //================================================================
+      minV = min(a_,b_);
+      maxV = max(a_,b_)+0.0000000001;
+      radiusX =  (minV /maxV)*size_/aspectRatio_ * modX; // (size_/3) is aspect ratio
+      radiusY = size_  * modY;
+      //================================================================
+      _pointBuf_a = 10123; //buf pointer
+      _pointBuf_b = 20123; //buf pointer
+      _pointBuf_c = 30123; //buf pointer
+      _pointBuf_d = 40123; //buf pointer
+      //================================================================
+      pointsNum = _calcEllipsePoints( cx_,cy_
+                                    , radiusX,radiusY
+                                    , rad_,division
+                                    , _pointBuf_a,_pointBuf_b
+                                    , _pointBuf_c,_pointBuf_d);
+      //================================================================  
+      cnt_ =pointsNum-1;
+      gfx_x = _pointBuf_a[0];gfx_y = _pointBuf_a[1];
+      _drawLineFromBuf2(_pointBuf_a,cnt_);
+      _drawLineFromBuf2(_pointBuf_c,cnt_);
+      _drawLineFromBuf2(_pointBuf_b,cnt_);
+      _drawLineFromBuf2(_pointBuf_d,cnt_);
+      //================================================================
+      gfx_lineto(_pointBuf_a[0],_pointBuf_a[1]);
+);
+//======================================================================
+
+//======================================================================
+//smooze
+_lastDirectionRad = _lastDirectionRad  + ( rad-_lastDirectionRad ) / slider60; //smooze
+angleRad = -_lastDirectionRad + (45*$pi)/180;
+// rot point
+rotPoint.x =  cx ; 
+rotPoint.y =  cY -size3Q/2;
+rotPoint._rotPoint(cx,cy,angleRad);
+// direction line
+gfx_set(0,1,1,0.8) ;
+gfx_line( cx,cy, rotPoint.x , rotPoint.y);
+gfx_line( cx,cy, cx+(cx-rotPoint.x) , cy+(cy-rotPoint.y) ); 
+//======================================================================
+//smooze value
+//======================================================================
+_lastMid   = _lastMid   + (_maxMid -_lastMid ) /slider61;
+_lastSideL = _lastSideL + (_maxSideL -_lastSideL)/slider61;
+_lastSideR = _lastSideR + (_maxSideR -_lastSideR)/slider61;
+_lastMax_L = _lastMax_L + (_max_L-_lastMax_L)/slider61;
+_lastMax_R = _lastMax_R + (_max_R-_lastMax_R)/slider61;
+//======================================================================
+
+minDb = -96.0; //visible Min dB
+//======================================================================
+_size = size3Q*_toRelativeValue ( (_max_L+_max_R)/2,minDb)*_LOG2_VAL_;
+_lastSizeEllipse = _lastSizeEllipse + (_size-_lastSizeEllipse) /slider61;
+_size = sizeQ*_toRelativeValue ( (_max_L+_max_R)/2,minDb)*2;
+_lastSizeDiamond = _lastSizeDiamond + (_size-_lastSizeDiamond) /slider61;
+//======================================================================
+//side width // ???
+//======================================================================
+( slider47 == 1 )?( 
+    
+    gainA =  max(_lastMax_L,_lastMax_R); // more sencivity 
+    gainB =  min(_lastMax_L,_lastMax_R);
+    // gainA =  _toRelativeValue(max(_lastMax_L,_lastMax_R) ,minDb); // expand roughly
+    // gainB =  _toRelativeValue(min(_lastMax_L,_lastMax_R),minDb);
+    //==================================================================
+    _drawDiamond( cx,cy 
+                //======================================================
+                , _lastSizeDiamond 
+                , angleRad
+                , _toRelativeValue(_lastMid ,minDb) * gainA
+                , _toRelativeValue(_lastSideR,minDb)/1.3 * gainB
+                , _toRelativeValue(_lastMid,minDb) * gainA
+                , _toRelativeValue(_lastSideL,minDb)/1.3 * gainB
+                ); 
+    //==================================================================
+    //if need
+    _sideMerge = _toRelativeValue((_lastSideL+_lastSideR),minDb )*_LOG2_VAL_;
+    _drawSideLine( cx, cy
+                 , _lastMax_L
+                 , _lastMax_R
+                 , size3Q * _sideMerge
+                 , angleRad * -1 //( or 1
+                 , 32
+                 , _sideMerge
+                 , _toRelativeValue(_lastMid/2,minDb ) * _LOG2_VAL_  * _sideMerge
+                 , 2);
+    //==================================================================            
+):(slider47 == 0)?(
+    //==================================================================
+    _drawDiamond_2( cx, cy
+                  , _lastMax_L
+                  , _lastMax_R
+                  , _lastSizeEllipse // gain value(mid+side
+                  , angleRad
+                  , 32
+                  , _toRelativeValue((_lastSideL+_lastSideR),minDb )*_LOG2_VAL_
+                  , _toRelativeValue(_lastMid/2,minDb ) * _LOG2_VAL_
+                  ,1.75);
+     //==================================================================
+     _sideMerge = _toRelativeValue((_lastSideL+_lastSideR),minDb )*_LOG2_VAL_;
+     _drawSideLine( cx, cy
+                  , _lastMax_L
+                  , _lastMax_R
+                  , size3Q * _sideMerge
+                  , angleRad * -1 //( or 1
+                  , 32
+                  ,_sideMerge
+                  ,_toRelativeValue(_lastMid/2,minDb ) * _LOG2_VAL_  * _sideMerge
+                  ,2);
+):(slider47 == 2)?(
+    //==================================================================
+    _drawEllipseOutLine( cx, cy
+                       , _lastMax_L
+                       , _lastMax_R
+                       , _lastSizeEllipse // gain value(mid+side
+                       , angleRad
+                       , 32
+                       , _toRelativeValue((_lastSideL+_lastSideR),minDb )*_LOG2_VAL_
+                       , _toRelativeValue(_lastMid/2,minDb ) * _LOG2_VAL_
+                       ,1.75);                        
+):(slider47 == 3)?(
+    //==================================================================
+    _drawEllipseBox( cx, cy
+                   , max(_lastMax_L,_lastMax_R)
+                   , min(_lastMax_L,_lastMax_R)
+                   , _lastSizeEllipse
+                   , angleRad
+                   , 6
+                   , _toRelativeValue((_lastSideL+_lastSideR),minDb ) * _LOG2_VAL_
+                   , _toRelativeValue(_lastMid,minDb ) * _LOG2_VAL_
+                   ,1.75);
+):(slider47 == 4)?(
+    //==================================================================
+    _drawEllipseOutAndDia( cx, cy
+                         , _lastMax_L
+                         , _lastMax_R
+                         , _lastSizeEllipse
+                         , angleRad
+                         , 32
+                         , _toRelativeValue((_lastSideL+_lastSideR),minDb ) * _LOG2_VAL_
+                         , _toRelativeValue(_lastMid,minDb ) * _LOG2_VAL_
+                         ,1.75);
+);
+//======================================================================
+
+slider45 = slider45 + (_newSlider2Value  -slider45 ) / slider60; // 
+slider_automate(2 ^ 5 ); //  slider2 is 5 ??
+// if need
+// slider_automate(2 ^ 6);e // -Stereo Direction(non Smooth) true value
+//======================================================================
